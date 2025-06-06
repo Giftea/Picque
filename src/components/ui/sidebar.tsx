@@ -201,6 +201,10 @@ const Sidebar = React.forwardRef<
     if (isMobile) {
       return (
         <Sheet open={openMobile} onOpenChange={setOpenMobile} {...props}>
+          <SheetTitle className="sr-only">Sidebar</SheetTitle>
+          <SheetDescription className="sr-only">
+            Displays the mobile sidebar.
+          </SheetDescription>
           <SheetContent
             data-sidebar="sidebar"
             data-mobile="true"
